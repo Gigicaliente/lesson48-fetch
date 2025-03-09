@@ -67,14 +67,7 @@ fetch('https://jsonplaceholder.typicode.com/posts', {
 
 //task6 
 
-
-fetch('https://jsonplaceholder.typicode.com/comments', {
-    method: 'GET',
-    headers: {
-        'User-Agent': 'MyCustomUserAgent/1.0'
-    },
-    body: JSON.stringify(data)
-})
+fetch('https://jsonplaceholder.typicode.com/comments')
 .then(response => response.json())
 .then(data => console.log(data))
 .catch(error => console.error('Ошибочка: ', error))
